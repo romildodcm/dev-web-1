@@ -1,90 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=100vh, initial-scale=1.0" />
-    <title>Currículo de Romildo</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
-      /* CSS Reset */
-      * {
-        padding: 0;
-        margin: 0;
-        vertical-align: baseline;
-        list-style: none;
-        border: 0;
+<html lang="pt">
+<!---------------------------------
+Exercício 2:
+
+Faça o seu currículo utilizando HTML
+- Informações sobre escolaridade;
+- Cursos realizados;
+- Áreas de interesse;
+- Idiomas;
+- Etc.
+
+---------------------------------->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=100vh, initial-scale=1.0" />
+  <title>Currículo de Romildo</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+    /* CSS Reset */
+    * {
+      padding: 0;
+      vertical-align: baseline;
+      list-style: none;
+      border: 0;
+    }
+
+    * {
+      font-family: "Ubuntu Mono", monospace;
+      color: #4af626;
+      background-color: #000000;
+    }
+
+    body {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      height: 100vh;
+      margin: 0;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    header {
+      min-height: 50px;
+      padding: 0;
+      margin-bottom: 2em;
+    }
+
+    .title {
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-weight: 400;
+      margin: 0;
+    }
+
+    main {
+      max-width: 800px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      main {
+        max-width: 100vw;
       }
-      * {
-        color: #4af626;
-        background-color: #000000;
-      }
-      * {
-        font-family: "Ubuntu Mono", monospace;
-      }
+
       body {
-        display: block;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 4%;
+        margin-right: 4%;
       }
-      header {
-        padding: 0;
-        margin-top: 1em;
-        margin-bottom: 2em;
-        /* background-color: rgb(208, 211, 214); */
-      }
-      .subtitle{
-        font-weight: 400;
-        margin-top: 2px;
-      }
-      li {
-        margin-left: 2%;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        list-style-type: disc;
-      }
-      a {
-        text-decoration: underline;
-      }
-      a:hover {
-        color: blue;
-      }
-      .return {
-        margin-top: 2em;
-        text-decoration: none;
-      }
-      footer {
-        position: absolute;
-        bottom: 0;
-        width: 80%;
-        height: 60px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h2>Romildo C Marques</h2>
-      <h4 class="subtitle">Discente de Tecnologia em Análise e Desenvolvimento de Sistemas no IFPR</h4>
-    </header>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ad pariatur
-      est officiis sapiente adipisci sed repudiandae, odit corrupti eius
-      molestias, temporibus molestiae beatae atque ab eos excepturi, dolor
-      consectetur!
-    </p>
+    }
 
-    <a class="return" href="./index.html">< voltar</a>
-    <footer>
-      <p>
-        Romildo C Marques<br /><a href="mailto:romildodcm@gmail.com"
-          >romildodcm@gmail.com</a
-        >
+    a {
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: blue;
+    }
+
+    main img {
+      width: 100%;
+    }
+
+    main figure {
+      margin-bottom: 1em;
+    }
+
+    .about-container{
+
+    }
+
+    .about-text {
+      margin-bottom: 2em;
+      text-align: justify;
+    }
+
+
+    li {
+      margin-left: 2%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      list-style-type: disc;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: blue;
+    }
+
+    .return {
+      text-decoration: none;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    footer {
+      margin-top: auto;
+      bottom: 0;
+      min-height: 60px;
+      width: 80%;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2 class="title">Romildo C Marques</h2>
+    <h4 class="subtitle">Discente de Tecnologia em Análise e Desenvolvimento de Sistemas no IFPR</h4>
+  </header>
+  <main>
+    <div class="about-container">
+      <h3>Sobre</h3>
+      <p class="about-text">
+        <!-- resumo de no máximo 2000 caracteres, formação, palavras chaves, coisas que gosto e conexões com área de atuação, experiências e projetos. 
+        
+        ver como adicionarei minha foto ao lado do texto
+        https://www.horadecodar.com.br/2020/04/06/alinhar-texto-depois-da-imagem/
+
+        https://pt.stackoverflow.com/questions/91606/colocar-texto-ao-lado-de-imagem/91611
+        -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ad pariatur
+        est officiis sapiente adipisci sed repudiandae, odit corrupti eius
+        molestias, temporibus molestiae beatae atque ab eos excepturi, dolor
+        consectetur!
       </p>
-      <p></p>
-    </footer>
-  </body>
+    </div>
+    <h3>Experiência</h3>
+    <h3>Formação acadêmica</h3>
+    <h3>Licenças e certificados</h3>
+    <h3>Experiência de voluntariado</h3>
+    <h3>Idiomas</h3>
+
+    <a class="return" href="./aula-1.html">
+      < Voltar </a>
+  </main>
+  <footer>
+    <p>
+      Romildo C Marques<br />
+      <a href="mailto:romildodcm@gmail.com">romildodcm@gmail.com</a>
+    </p>
+  </footer>
+</body>
+
 </html>

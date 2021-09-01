@@ -1,89 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=100vh, initial-scale=1.0" />
-    <title>Foz do Iguaçu</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
-      /* CSS Reset */
-      * {
-        padding: 0;
-        margin: 0;
-        vertical-align: baseline;
-        list-style: none;
-        border: 0;
-      }
-      * {
-        color: #4af626;
-        background-color: #000000;
-      }
-      * {
-        font-family: "Ubuntu Mono", monospace;
-      }
-      body {
-        display: block;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        margin-left: 10%;
-        margin-right: 10%;
-      }
-      header {
-        padding: 0;
-        margin-top: 1em;
-        margin-bottom: 2em;
-        background-color: rgb(208, 211, 214);
+<html lang="pt">
+<!---------------------------------
+Exercício 1:
+
+Faça uma página HTML, que contenha:
+1) O nome da cidade onde você more;
+2) Uma imagem da cidade onde você mora;
+3) Um texto sobre sua cidade. Coloque o texto na cor azul;
+4) De um título para sua página; 
+---------------------------------->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=100vh, initial-scale=1.0" />
+  <title>Foz do Iguaçu</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+    /* CSS Reset */
+    * {
+      padding: 0;
+      vertical-align: baseline;
+      list-style: none;
+      border: 0;
+    }
+
+    * {
+      font-family: "Ubuntu Mono", monospace;
+      color: #4af626;
+      background-color: #000000;
+    }
+
+    body {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      height: 100vh;
+      margin: 0;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    header {
+      min-height: 50px;
+      padding: 0;
+      margin-bottom: 2em;
+    }
+
+    .title {
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-weight: 400;
+      margin: 0;
+    }
+
+
+    main {
+      max-width: 800px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      main {
+        max-width: 100vw;
       }
 
-      li {
-        margin-left: 2%;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        list-style-type: disc;
+      body {
+        margin-left: 4%;
+        margin-right: 4%;
       }
-      a {
-        text-decoration: underline;
-      }
-      a:hover {
-        color: blue;
-      }
-      .return {
-        margin-top: 2em;
-        text-decoration: none;
-      }
-      .content-div {
-        color: blue;
-      }
-      footer {
-        position: absolute;
-        bottom: 0;
-        width: 80%;
-        height: 60px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h2>Foz do Iguaçu</h2>
-    </header>
-    <div >
-      <p class="content-div">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus aut
-        totam voluptas nesciunt fuga quisquam obcaecati blanditiis, fugiat
-        eligendi ad minus quae dolorem esse expedita repudiandae culpa eveniet?
-        Quod, rem.
-      </p>
-    </div>
-    <a class="return" href="./index.html">< voltar</a>
-    <footer>
-      <p>
-        Romildo C Marques<br /><a href="mailto:romildodcm@gmail.com"
-          >romildodcm@gmail.com</a
-        >
-      </p>
-      <p></p>
-    </footer>
-  </body>
+
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: blue;
+    }
+
+    main img {
+      width: 100%;
+    }
+
+    main figure {
+      margin-bottom: 1em;
+    }
+
+    .blue-text {
+      color: blue;
+      margin-bottom: 2em;
+      text-align: justify;
+    }
+
+    .return {
+      text-decoration: none;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    footer {
+      margin-top: auto;
+      bottom: 0;
+      min-height: 60px;
+      width: 80%;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2 class="title">Foz do Iguaçu</h2>
+    <h4 class="subtitle">Paraná, Brasil</h4>
+  </header>
+  <main>
+    <figure class="post-thubnail">
+      <img src="./img/igu.jpg" alt="Praça da Paz em Foz do Iguaçu" />
+      <figcaption>Foto 1: Praça da Paz em Foz do Iguaçu.</figcaption>
+    </figure>
+    <p class="blue-text">
+      Município Brasileiro do oeste do Paraná, na tríplice fronteira com Argentina e Paraguai, com população estimada de
+      258 mil habitantes (IBGE), cidade internacionalmente conhecida pelas Cataratas do Iguaçu e pela Hidroelétrica de
+      Itaipu, dentre outros diversos atrativos e eventos que levam a a ser a terceira cidade mais visitada por turistas
+      estrangeiros no Brasil.
+      <br><br>
+      Muitos brasileiros também visitam Foz do Iguaçu pois além desses atrativos, a cidade é um destino de compras, por
+      vários anos os famosos muambeiros tinham essa fronteira como a principal porta de entrada de produtos eletrônicos
+      e de informática que chegavam ao mercado brasileiro, várias são as pessoa que tiveram o primeiro contato com os
+      computadores por conseguirem comprar com um preço mais acessível na fronteira.
+      <br><br>
+      Nos últimos anos muitos estudantes vieram morar na cidade em busca do ensino superior, tanto pelas instituições
+      públicas em Foz do Iguaçu, como Instituto Federal do Paraná (IFPR), Universidade Estadual do Oeste do Paraná
+      (UNIOESTE) e Universidade Federal da Integração Latino-Americana (UNILA), quanto pelos cursos de medicina no outro
+      lado da fronteira, no Paraguai. Esse movimento de jovens junto da capacitação técnica tem gerado uma boa
+      expectativa para o futuro da cidade.
+    </p>
+    <a class="return" href="./aula-1.html">
+      < Voltar </a>
+  </main>
+  <footer>
+    <p>
+      Romildo C Marques<br />
+      <a href="mailto:romildodcm@gmail.com">romildodcm@gmail.com</a>
+    </p>
+  </footer>
+</body>
+
 </html>
