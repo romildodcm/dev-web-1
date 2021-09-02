@@ -48,7 +48,7 @@ Faça o seu currículo utilizando HTML
     header {
       min-height: 50px;
       padding: 0;
-      margin-bottom: 2em;
+      margin-bottom: 1em;
     }
 
     .title {
@@ -92,21 +92,35 @@ Faça o seu currículo utilizando HTML
       margin-bottom: 1em;
     }
 
-    .about-container{
-
-    }
-
     .about-text {
       margin-bottom: 2em;
       text-align: justify;
     }
 
-
     li {
-      margin-left: 2%;
+      margin-left: 3%;
       margin-top: 5px;
-      margin-bottom: 5px;
+      margin-bottom: 1em;
       list-style-type: disc;
+    }
+
+    li h4 {
+      margin: 0.3em;
+    }
+
+    .li-content {
+      text-align: justify;
+      margin: 0;
+      margin-top: 0.4em;
+      margin-left: 1%;
+    }
+
+    .li-sub-content {
+      text-align: justify;
+      font-weight: 100;
+      margin: 0;
+      margin-top: 0.4em;
+      margin-left: 1%;
     }
 
     a {
@@ -135,31 +149,161 @@ Faça o seu currículo utilizando HTML
 
 <body>
   <header>
-    <h2 class="title">Romildo C Marques</h2>
+    <h2 class="title">Romildo da Cruz Marques</h2>
     <h4 class="subtitle">Discente de Tecnologia em Análise e Desenvolvimento de Sistemas no IFPR</h4>
   </header>
   <main>
-    <div class="about-container">
+    <div>
       <h3>Sobre</h3>
       <p class="about-text">
-        <!-- resumo de no máximo 2000 caracteres, formação, palavras chaves, coisas que gosto e conexões com área de atuação, experiências e projetos. 
-        
-        ver como adicionarei minha foto ao lado do texto
-        https://www.horadecodar.com.br/2020/04/06/alinhar-texto-depois-da-imagem/
-
-        https://pt.stackoverflow.com/questions/91606/colocar-texto-ao-lado-de-imagem/91611
-        -->
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ad pariatur
-        est officiis sapiente adipisci sed repudiandae, odit corrupti eius
-        molestias, temporibus molestiae beatae atque ab eos excepturi, dolor
-        consectetur!
+        Gosto muito de tecnologia, suas aplicações e implicações na sociedade, também sempre fui muito curioso para
+        entender como as coisas funcionam, cursei alguns anos de engenharia física (UNILA), onde estive envolvido em
+        vários projetos, na maioria das vezes sendo o responsável por desenvolvimento de hardware e software, e
+        gerenciamento de equipe e projeto, para adquirir mais conhecimento em sistemas, software, aplicativos, etc,
+        mudei para o curso de análise e desenvolvimento de sistemas (IFPR).
+        <br><br>
+        No meu tempo livre aproveito para relaxar praticando a fotografia, o plane spotter (observar e fotografar
+        aviões), ou ainda para implementar soluções em casa, muitas vezes usando plataformas como Arduino e Raspberry
+        Pi, também sou radioamador (estação PU5XRM) e gosto de construir ou programar coisas relacionadas com
+        rádio/transcepção de sinais.
       </p>
     </div>
-    <h3>Experiência</h3>
     <h3>Formação acadêmica</h3>
-    <h3>Licenças e certificados</h3>
-    <h3>Experiência de voluntariado</h3>
+    <ul>
+      <li>
+        <div class="li-container">
+          <h4>Instituto Federal do Paraná - IFPR</h4>
+          <p class="li-content">Tecnologia em Análise e Desenvolvimento de Sistemas. 2021 - 2024.</p>
+        </div>
+      </li>
+      <li>
+        <div class="li-container">
+          <h4>Universidade Federal da Integração Latino-Americana - UNILA</h4>
+          <p class="li-content">Engenharia Física. 2015 - 2021. Não concluído.</p>
+        </div>
+      </li>
+    </ul>
+    <h3>Experiência</h3>
+    <ul>
+      <li>
+        <div class="li-container">
+          <h4>Bolsista de Iniciação Tecnológica</h4>
+          <p class="li-content">Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).</p>
+          <p class="li-sub-content">Jan. de 2020 - Ago. de 2021</p>
+          <p class="li-sub-content">Pesquisa e desenvolvimento de uma plataforma de dados meteorológicos composta por
+            estações meteorológicas, banco de dados e interface de usuário.</p>
+        </div>
+      </li>
+      <li>
+        <div class="li-container">
+          <h4>Bolsista de Iniciação Científica</h4>
+          <p class="li-content">Parque Tecnológico Itaipu (PTI)</p>
+          <p class="li-sub-content">Mai. de 2017 - Out. de 2019</p>
+          <p class="li-sub-content">Sistema de Telemetria e Aplicações, no projeto de pesquisa Fundamentos da Física com
+            Aplicações à Astronáutica, da UNILA em parceria com o Polo Astronômico do PTI. Com objetivo de estudar e
+            aplicar processos de automação e controle, eletrônica digital e analógica, geradores e receptores de sinais,
+            com foco em telemetria, desenvolver sistema de telemetria embarcado e plataforma para processamento e
+            exibição dos dados em tempo real, que serão usados em experimentos com simulador de satélites. Contribuir
+            auxiliando na modernização das estruturas e instalações de novos equipamentos do Polo Astronômico no
+            tangente a instrumentação e automação, e promover a divulgação de ciência e tecnologia em astronáutica.</p>
+        </div>
+      </li>
+      <li>
+        <div class="li-container">
+          <h4>Astrofotógrafo Voluntário</h4>
+          <p class="li-content">Parque Tecnológico Itaipu (PTI)</p>
+          <p class="li-sub-content">Mar. de 2016 - Abr. de 2017</p>
+          <p class="li-sub-content">Desenvolvimento de atividades de astrofotografia no observatório do Polo Astronômico
+            Casimiro Montenegro Filho, com objetivo de apoiar atividades de ensino e divulgação científica.</p>
+        </div>
+      </li>
+      <li>
+        <div class="li-container">
+          <h4>Voluntário em Laboratório</h4>
+          <p class="li-content">Parque Tecnológico Itaipu (PTI)</p>
+          <p class="li-sub-content">Jul. de 2015 - Out. de 2015</p>
+          <p class="li-sub-content">Apoio e auxílio em montagem de bancadas de testes, desenvolvimento e análise de
+            materiais no Projeto Absorção e Desenvolvimento de Tecnologia de Baterias de Sódio Avançadas.</p>
+        </div>
+      </li>
+      <li>
+        <div class="li-container">
+          <h4>Estagiário em Secretaria de Apoio</h4>
+          <p class="li-content">Universidade Estadual do Oeste do Paraná (UNIOESTE)</p>
+          <p class="li-sub-content">Mar. de 2017 - Dez. de 2019</p>
+          <p class="li-sub-content">Atendimento ao público em geral; Auxiliar na elaboração de planilhas e levantamento
+            de dados; Auxiliar na elaboração de documentos; Auxiliar no preparo de materiais para reuniões e atividades
+            correlatas; auxiliar professores em sala de aulas/dar suporte a eventos com equipamentos de informática e
+            multimídia; Organização de materiais de uso diários; Operar máquinas de reprodução de cópias e encadernação.
+          </p>
+        </div>
+      </li>
+    </ul>
     <h3>Idiomas</h3>
+    <ul>
+      <li>
+        <div class="li-container">
+          <h4>Espanhol</h4>
+          <p class="li-content">Nível básico a intermediário.</p>
+        </div>
+      </li>
+      <li>
+        <div class="li-container">
+          <h4>Inglês</h4>
+          <p class="li-content">Nível básico a intermediário.</p>
+        </div>
+      </li>
+      <li>
+        <div class="li-container">
+          <h4>Português</h4>
+          <p class="li-content">Fluente ou nativo.</p>
+        </div>
+      </li>
+    </ul>
+    <h3>Licenças e certificados</h3>
+    <ul>
+      <li>
+        <div class="li-container">
+          <h4>Application of Remote Sensing to Support the Management of Hydrographic Watersheds in Latin America and
+            the Caribbean</h4>
+          <p class="li-content">National Aeronautics and Space Administration (NASA); Parque Tecnológico Itaipu (PTI);
+            United Nations Educational, Scientific and Cultural Organization (UNESCO). 2017.</p>
+          <p class="li-content">Introduction to Synthetic Aperture Radar (SAR); Data portal and access to SAR data
+            files; SAR image processing; Case study: generating terrestrial coverage classification by merging data from
+            Sentinel-1 and Landsat; Introduction to interferometric SAR (INSAR) and polarimetric (POLSAR); Case study:
+            determining surface deformation with INSAR and differences in vegetation cover using polarimetric radar;
+            General summary of SMAP soil moisture, GPM precipitation and evapotranspiration; Access to SMAP soil
+            moisture data, GPM precipitation and evapotranspiration;Technical visit to the True São Francisco River
+            Watershed; Exchange of experiences.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="li-container">
+          <h4>Treinamento para Professores do 2º COSPAR Symposium</h4>
+          <p class="li-content">Committee on Space Research (COSPAR). 2015.</p>
+        </div>
+      </li>
+      <li>
+        <div class="li-container">
+          <h4>Treinamento de Aplicação e Seminário FRX e DRX</h4>
+          <p class="li-content">PANalytical. 2015.</p>
+        </div>
+      </li>
+      <li>
+        <div class="li-container">
+          <h4>Ambientação de Estagiários</h4>
+          <p class="li-content">Universidade Estadual do Oeste do Paraná (UNIOESTE). 2014.</p>
+        </div>
+      </li>
+      <li>
+        <div class="li-container">
+          <h4>Curso de Informática</h4>
+          <p class="li-content">Technos Escola de Tecnologia. 2013.</p>
+          <p class="li-content">Digitação, Windows, Word, Excel e Internet. 2013.</p>
+        </div>
+      </li>
+    </ul>
 
     <a class="return" href="./aula-1.html">
       < Voltar </a>
