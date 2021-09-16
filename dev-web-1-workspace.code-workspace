@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\..\\Google Drive\\Arquivos IFPR\\2021.1\\Desenvolvimento Web I"
+		}
+	],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "dev-web-1"
+  }
+}
