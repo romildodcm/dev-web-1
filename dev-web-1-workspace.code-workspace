@@ -1,13 +1,17 @@
 {
 	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "..\\..\\..\\..\\Google Drive\\Arquivos IFPR\\2021.1\\Desenvolvimento Web I"
-		}
-	],
+        {
+            "path": "."
+        },
+        {
+            "path": "..\\..\\..\\..\\Google Drive\\Arquivos IFPR\\2021.1\\Desenvolvimento Web I"
+        },
+        {
+            "path": "..\\html_css_responsive"
+        }
+    ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "dev-web-1"
+    "liveServer.settings.multiRootWorkspaceName": "dev-web-1",
+    "livePreview.defaultPreviewPath": "d:\\Lattes\\Documents\\GitHub-HD\\html_css_responsive\\blog\\index.html"
   }
 }
