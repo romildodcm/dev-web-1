@@ -5,51 +5,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 3 - Exercício 2</title>
   <style>
-    th.cabecalho {
-      /* Borda para as celulas */
+    .roteiros {
       border: 1px solid #6e6e6e;
+    }
+
+    /* Tenho um elemento pai da classe roteiros, os elementos filhos tags th e td terão essas propriedades */
+    .roteiros th,
+    td {
+      border: 1px solid #6e6e6e;
+    }
+
+    /* Tenho um elemento pai da classe roteiros, os elementos filhos tags th terão essas propriedades */
+    .roteiros th {
       color: yellow;
       background-color: #6e6e6e;
     }
-
-    td.padrao {
-      /* Borda para as celulas */
-      border: 1px solid #6e6e6e;
-    }
-
-    table.exercicio {
-      /* Borda para a tabela */
-      border: 1px solid #6e6e6e;
-      /* Espaçamento entre as celulas */
-      border-spacing: 2px;
-    }
   </style>
-  <title>Aula 3 - Exercício 2</title>
 </head>
 
 <body>
-  <table class="exercicio">
+  <table class="roteiros">
     <caption>Melhores Roteiros</caption>
     <tr>
-      <th class="cabecalho">Cidade</th>
-      <th class="cabecalho">País</th>
-      <th class="cabecalho">Melhor período</th>
+      <th>Cidade</th>
+      <th>País</th>
+      <th>Melhor período</th>
     </tr>
     <tr>
-      <td class="padrao">Paris</td>
-      <td class="padrao">França</td>
-      <td class="padrao">Primavera e verão</td>
+      <td>Paris</td>
+      <td>França</td>
+      <td>Primavera e verão</td>
     </tr>
     <tr>
-      <td class="padrao">Santiago</td>
-      <td class="padrao">Chile</td>
-      <td class="padrao">Outono e inverno</td>
+      <td>Santiago</td>
+      <td>Chile</td>
+      <td>Outono e inverno</td>
     </tr>
     <tr>
-      <td class="padrao">Natal</td>
-      <td class="padrao">Brasil</td>
-      <td class="padrao">Todas estações</td>
+      <td>Natal</td>
+      <td>Brasil</td>
+      <td>Todas estações</td>
     </tr>
   </table>
 </body>

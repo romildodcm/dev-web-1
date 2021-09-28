@@ -5,49 +5,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 3 - Exercício 4</title>
   <style>
-    th.cabecalho {
+    .tabela-consumo {
+      border-collapse: collapse;
+    }
+
+    .tabela-consumo th,
+    td {
       color: black;
-      padding: 2px 8px 2px 8px;
+      border: 2px solid red;
+      padding: 2px 6px;
+      text-align: center;
+    }
+
+    .tabela-consumo th {
       background-color: #CCC;
     }
-
-    td.red {
-      text-align: center;
-      padding: 2px 8px 2px 8px;
-      background-color: white;
-    }
-
-    table.exercicio {
-      border-spacing: 2px;
-      background-color: red;
-    }
   </style>
-  <title>Aula 3 - Exercício 4</title>
 </head>
 
 <body>
-  <table class="exercicio">
+  <table class="tabela-consumo">
     <caption>Consumo na estrada</caption>
     <tr>
-      <th class="cabecalho">Nome</th>
-      <th class="cabecalho">Marca</th>
-      <th class="cabecalho">Consumo</th>
+      <th>Nome</th>
+      <th>Marca</th>
+      <th>Consumo</th>
     </tr>
     <tr>
-      <td class="red">Fox</td>
-      <td class="red">VW</td>
-      <td class="red">14 km/l</td>
+      <td>Fox</td>
+      <td>VW</td>
+      <td>14 km/l</td>
     </tr>
     <tr>
-      <td class="red">Gol</td>
-      <td class="red">VW</td>
-      <td class="red">15 km/l</td>
+      <td>Gol</td>
+      <td>VW</td>
+      <td>15 km/l</td>
     </tr>
     <tr>
-      <td class="red">Golf</td>
-      <td class="red">VW</td>
-      <td class="red">11 km/l</td>
+      <td>Golf</td>
+      <td>VW</td>
+      <td>11 km/l</td>
     </tr>
   </table>
 </body>

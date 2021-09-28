@@ -5,80 +5,92 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 3 - Exercício 7</title>
   <style>
     table.casas {
       border: 1px solid #ccc;
-      border-spacing: 4px;
+      border-spacing: 2px;
     }
 
-    th.titles {
-      text-align: center;
-      padding: 2px;
+    .casas th {
       background-color: #5efb6e;
+      padding: 3px;
     }
 
-    tr.out-line {
-      outline: 1px solid #ccc;
-    }
-
-    td.itens {
-      margin: 0px;
-    }
-
-    img.image-anuncio {
+    .casas img {
       width: 150px;
-      margin-bottom: 3px;
       padding: 1px;
     }
 
-    p.info-aluguel,
-    p.info-venda {
+    .casas p {
       text-align: center;
-      margin: 0px;
-      
+      margin: 0;
     }
 
-    p.info-aluguel {
-      background-color: #ccc;
-    }
-
-    p.info-venda {
+    .venda p {
       background-color: lightblue;
     }
+
+    .aluguel p {
+      background-color: #ccc;
+    }
   </style>
-  <title>Aula 3 - Exercício 7</title>
 </head>
 
 <body>
   <table class="casas">
     <tr>
-      <th class="titles" colspan="2">Casas no centro</th>
+      <th>Casas no centro</th>
     </tr>
-    <tr class="out-line">
-      <td class="itens">
-        <img src="casa-1.png" alt="casa 1" class="image-anuncio">
-        <p class="info-venda">Imovel a venda:</p>
-        <p class="info-venda">R$348.000</p>
-      </td>
-      <td class="itens">
-        <img src="casa-2.png" alt="casa 2" class="image-anuncio">
-        <p class="info-venda">Imovel a venda:</p>
-        <p class="info-venda">R$680.000</p>
+    <tr>
+      <td>
+        <table class="casas venda">
+          <tr>
+            <td>
+              <img src="casa-1.png" alt="casa 1">
+            </td>
+            <td>
+              <img src="casa-2.png" alt="casa 2">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Imovel a venda:</p>
+              <p>R$348.000</p>
+            </td>
+            <td>
+              <p>Imovel a venda:</p>
+              <p>R$680.000</p>
+            </td>
+          </tr>
+        </table>
       </td>
     </tr>
     <tr>
       <th class="titles" colspan="2">Casas na vila A</th>
     </tr>
-    <tr class="out-line">
-      <td class="itens">
-        <img src="casa-3.png" alt="casa 3" class="image-anuncio">
-        <p class="info-aluguel">Imovel para aluguel:</p>
-        <p class="info-aluguel">R$1200</p>
-      </td>
-      <td class="itens">
-        <img src="casa-4.png" alt="casa 4" class="image-anuncio">
-        <p class="info-aluguel">Imovel para aluguel:</p>
-        <p class="info-aluguel">R$1300</p>
+    <tr>
+      <td>
+        <table class="casas aluguel">
+          <tr>
+            <td>
+              <img src="casa-3.png" alt="casa 3">
+            </td>
+            <td>
+              <img src="casa-4.png" alt="casa 4">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Imovel para aluguel:</p>
+              <p class="info-aluguel">R$1200</p>
+            </td>
+            <td>
+              <p class="info-aluguel">Imovel para aluguel:</p>
+              <p class="info-aluguel">R$1300</p>
+            </td>
+          </tr>
+        </table>
       </td>
     </tr>
   </table>
