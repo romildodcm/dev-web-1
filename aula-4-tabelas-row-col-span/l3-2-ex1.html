@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 1</title>
+  <style>
+    .vendas-carros {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    .vendas-carros th,
+    td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    tr.amarelo {
+      background-color: rgb(243, 213, 124);
+    }
+
+    tr.azul {
+      background-color: #97cbfa;
+    }
+
+    td.fonte {
+      background-color: #E6e6e6;
+      font-size: 0.45em;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="vendas-carros">
+    <tr class="amarelo">
+      <th colspan="2">Vendas do 1º Semestre</th>
+    </tr>
+    <tr class="azul">
+      <th>Modelo</th>
+      <th>Unidades</th>
+    </tr>
+    <tr>
+      <td>Palio</td>
+      <td>585.240</td>
+    </tr>
+    <tr>
+      <td>Gol</td>
+      <td>529.894</td>
+    </tr>
+    <tr>
+      <td colspan="2" class="fonte">fonte: agencia Reuters</td>
+    </tr>
+  </table>
+</body>
+
+</html>
