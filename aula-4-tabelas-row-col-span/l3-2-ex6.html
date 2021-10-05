@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 6</title>
+  <style>
+    table.serie {
+      border: 1px solid black;
+    }
+
+    .serie th,
+    td {
+      border: 1px solid black;
+      padding: 0.2em;
+    }
+
+    .serie th {
+      background-color: lightblue;
+    }
+
+    th.ano-maior {
+      background-color: yellow;
+    }
+
+    th.ano-menor {
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="serie">
+    <tr>
+      <th colspan="4">Vendas Trimestrais</th>
+    </tr>
+    <tr>
+      <th rowspan="3" class="ano-maior">2010</th>
+      <td>144.000</td>
+      <th rowspan="3" class="ano-menor">2009</th>
+      <td>188.000</td>
+    </tr>
+    <tr>
+      <td>139.580</td>
+      <td>179.580</td>
+    </tr>
+    <tr>
+      <td>254.900</td>
+      <td>298.500</td>
+    </tr>
+  </table>
+</body>
+
+</html>
