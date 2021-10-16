@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layout - Exercício 5</title>
+  <title>Layout - Exercício 6</title>
   <style>
     body {
-      background-color: black;
+      background-image: url(https://placekitten.com/50/50);
     }
 
     #container {
@@ -18,37 +18,40 @@
     }
 
     #header {
-      background-color: #0066cb;
+      background-image: url(https://live.staticflickr.com/65535/49890612847_76778fecf0_b.jpg);
       color: white;
-      padding: 1.2em;
+      padding: 1.6em;
       text-align: center;
     }
 
     #header h1 {
-      margin: 0px;
+      text-decoration: underline 2px;
+    }
+
+    div#header span {
+      font-size: x-large;
     }
 
     #header ul {
-      padding: 0px;
       margin: 2px;
+      padding: 0px;
+      padding-bottom: 6px;
       list-style-type: none;
     }
 
     #header li {
       display: inline;
-    }
-
-    .menu-border {
-      padding-right: 5px;
-      border-right: 1px solid white;
+      padding: 4px;
+      background-color: #fea500;
+      border: 2px solid black;
     }
 
     #header a {
-      color: white;
+      text-decoration: none;
     }
 
     #header a:hover {
-      color: yellow;
+      text-decoration: underline;
     }
 
     #content {
@@ -63,7 +66,7 @@
     }
 
     #content div {
-      border: 3px solid #122811;
+      border: 2px solid #122811;
     }
 
     #content h3,
@@ -72,16 +75,12 @@
       padding: 10px;
     }
 
+    #content h3 {
+      background-color: #fea500;
+    }
+
     #content p {
-      padding-bottom: 2em;
-    }
-
-    #intro h3 {
-      background-color: #d1b48c;
-    }
-
-    #desenvolvimento h3 {
-      background-color: #cdffcc;
+      padding-bottom: 1.5em;
     }
 
     span.subtitulo {
@@ -98,39 +97,31 @@
 <body>
   <div id="container">
     <div id="header">
-      <h1>Desenvolvimento Web</h1>
+      <h1>D<span>ESENVOLVIMENTO DE FRONT-END</span></h1>
       <ul>
-        <li><a href="https://www.google.com/" class="menu-border">google</a></li>
+        <li><a href="https://foz.ifpr.edu.br/category/noticias/" class="menu-border">news</a></li>
         <li><a href="https://foz.ifpr.edu.br/" class="menu-border">ifpr</a></li>
-        <li><a href="https://www.uol.com.br/">uol</a></li>
+        <li><a href="https://www.flickr.com/photos/romildo/">fotos</a></li>
       </ul>
     </div>
     <div id="content">
       <h2>Introdução</h2>
-      <div id="intro">
-        <h3>S<span class="subtitulo">OBRE COMO SE DESENVOLVEU O TRABALHO</span></h3>
+      <div>
+        <h3>V<span class="subtitulo">ANTAGENS DO SOFTWARE</span></h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius voluptatum ducimus blanditiis cupiditate velit
           veniam. Praesentium tempora et debitis <span class="texto-destaque">consequatur sunt placeat</span> tempore
           blanditiis, dolore error
           temporibus
           <span class="texto-destaque">facilis non</span> reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Cupiditate
-          corrupti aperiam
-          fugiat dolorem libero odio tenetur ratione, delectus doloremque, beatae ex qui quia. Esse excepturi, iste eos
-          labore modi dignissimos!
+          elit.
         </p>
       </div>
       <h2>Desenvolvimento</h2>
-      <div id="desenvolvimento">
-        <h3>S<span class="subtitulo">OBRE OS PRINCÍPIOS SOCIAIS</span></h3>
+      <div>
+        <h3>M<span class="subtitulo">ETODOLOGIA DE DESENVOLVIMENTO</span></h3>
         <p>Lorem, ipsum dolor sit amet, <span class="texto-destaque">consectetur adipisicing</span> elit. Recusandae
-          eligendi, repellendus
-          nostrum consectetur
-          dolorum nisi iste, in sint nulla, neque modi enim repellat ad assumenda minima similique eius iure error.
-          Lorem
-          ipsum dolor, sit amet consectetur adipisicing elit. Autem perferendis voluptatum itaque nostrum, fuga
-          laboriosam
-          sapiente accusamus quos, officiis unde dolores, distinctio animi atque rem cumque a delectus doloremque sint.
+          eligendi, repellendus nostrum consectetur dolorum nisi iste, in sint nulla, neque modi enim repellat ad
+          assumenda minima similique.
         </p>
       </div>
     </div>

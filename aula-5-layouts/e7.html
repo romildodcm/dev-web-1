@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layout - Exercício 5</title>
+  <title>Layout - Exercício 7</title>
   <style>
     body {
       background-color: black;
@@ -14,11 +14,11 @@
     #container {
       margin: auto;
       background-color: white;
-      max-width: 800px;
+      max-width: 900px;
     }
 
     #header {
-      background-color: #0066cb;
+      background-color: burlywood;
       color: white;
       padding: 1.2em;
       text-align: center;
@@ -26,6 +26,7 @@
 
     #header h1 {
       margin: 0px;
+      color: navy;
     }
 
     #header ul {
@@ -39,22 +40,50 @@
     }
 
     .menu-border {
-      padding-right: 5px;
-      border-right: 1px solid white;
+      padding-right: 6px;
+      border-right: 1px solid navy;
     }
 
     #header a {
-      color: white;
-    }
-
-    #header a:hover {
       color: yellow;
     }
 
+    #header a:hover {
+      background-color: black;
+    }
+
+    #menu-content {
+      display: flex;
+    }
+
+    #left-menu {
+      background-color: burlywood;
+      height: max-content;
+    }
+
+    #left-menu ul {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    #left-menu li {
+      color: navy;
+      background-color: white;
+      border-radius: 4px;
+      padding: 5px;
+      padding-right: 50px;
+      margin: 10px;
+    }
+
+    #left-menu li:hover {
+      background-color: lightgreen;
+    }
+
     #content {
-      padding: 10px;
-      padding-top: 0px;
-      padding-bottom: 3em;
+      padding: 12px;
     }
 
     #content h2 {
@@ -62,35 +91,11 @@
       border-bottom: 1px solid navy;
     }
 
-    #content div {
-      border: 3px solid #122811;
-    }
-
-    #content h3,
-    p {
-      margin: 0px;
-      padding: 10px;
-    }
-
-    #content p {
-      padding-bottom: 2em;
-    }
-
-    #intro h3 {
-      background-color: #d1b48c;
-    }
-
-    #desenvolvimento h3 {
-      background-color: #cdffcc;
-    }
-
-    span.subtitulo {
+    #footer {
+      background-color: #ccc;
+      text-align: center;
       font-size: small;
-    }
-
-    span.texto-destaque {
-      color: red;
-      font-weight: bold;
+      padding: 1.5em;
     }
   </style>
 </head>
@@ -98,34 +103,32 @@
 <body>
   <div id="container">
     <div id="header">
-      <h1>Desenvolvimento Web</h1>
+      <h1>Desenvolvimento de Sistemas</h1>
       <ul>
         <li><a href="https://www.google.com/" class="menu-border">google</a></li>
         <li><a href="https://foz.ifpr.edu.br/" class="menu-border">ifpr</a></li>
         <li><a href="https://www.uol.com.br/">uol</a></li>
       </ul>
     </div>
-    <div id="content">
-      <h2>Introdução</h2>
-      <div id="intro">
-        <h3>S<span class="subtitulo">OBRE COMO SE DESENVOLVEU O TRABALHO</span></h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius voluptatum ducimus blanditiis cupiditate velit
-          veniam. Praesentium tempora et debitis <span class="texto-destaque">consequatur sunt placeat</span> tempore
-          blanditiis, dolore error
-          temporibus
-          <span class="texto-destaque">facilis non</span> reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Cupiditate
-          corrupti aperiam
-          fugiat dolorem libero odio tenetur ratione, delectus doloremque, beatae ex qui quia. Esse excepturi, iste eos
-          labore modi dignissimos!
-        </p>
+    <div id="menu-content">
+      <div id="left-menu">
+        <ul>
+          <li>produtos</li>
+          <li>clientes</li>
+          <li>help-desk</li>
+          <li>informações</li>
+        </ul>
       </div>
-      <h2>Desenvolvimento</h2>
-      <div id="desenvolvimento">
-        <h3>S<span class="subtitulo">OBRE OS PRINCÍPIOS SOCIAIS</span></h3>
-        <p>Lorem, ipsum dolor sit amet, <span class="texto-destaque">consectetur adipisicing</span> elit. Recusandae
-          eligendi, repellendus
-          nostrum consectetur
+      <div id="content">
+        <h2>Introdução</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius voluptatum ducimus blanditiis cupiditate velit
+          veniam. Praesentium tempora et debitis consequatur, sunt placeat tempore blanditiis, dolore error temporibus
+          facilis non reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corrupti aperiam
+          fugiat dolorem libero odio tenetur ratione, delectus doloremque, beatae ex qui quia. Esse excepturi, iste eos
+          labore modi dignissimos!</p>
+        <h2>Desenvolvimento</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi, repellendus nostrum
+          consectetur
           dolorum nisi iste, in sint nulla, neque modi enim repellat ad assumenda minima similique eius iure error.
           Lorem
           ipsum dolor, sit amet consectetur adipisicing elit. Autem perferendis voluptatum itaque nostrum, fuga
@@ -133,6 +136,9 @@
           sapiente accusamus quos, officiis unde dolores, distinctio animi atque rem cumque a delectus doloremque sint.
         </p>
       </div>
+    </div>
+    <div id="footer">
+      Site desenvolvido por tectronica S.A.
     </div>
   </div>
 </body>
