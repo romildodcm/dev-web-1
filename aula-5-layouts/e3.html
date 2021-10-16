@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout - Exercício 3</title>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    #container {
+      margin: auto;
+      background-color: white;
+      max-width: 900px;
+    }
+
+    #header {
+      background-color: burlywood;
+      color: white;
+      text-align: center;
+    }
+    
+    #header h1 {
+      padding: 20px;
+      margin: 0px;
+      color: navy;
+    }
+
+    #header ul {
+      /* margin: 2px; */
+      margin: auto;
+      padding: 6px;
+      list-style-type: none;
+      background-color: #2e7d9c;
+    }
+
+    #header li {
+      display: inline;
+    }
+
+    .menu-border {
+      padding-right: 6px;
+      border-right: 1px solid white;
+    }
+
+    #header a {
+      color: white;
+    }
+    
+    #header a:hover {
+      color: yellow;
+      /* background-color: black; */
+    }
+
+    #content {
+      padding: 10px;
+    }
+
+    #content h2 {
+      color: navy;
+      border-bottom: 1px solid navy;
+    }
+
+    #footer {
+      background-color: #ccc;
+      text-align: center;
+      font-size: small;
+      padding: 1.5em;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>Desenvolvimento de Sistemas</h1>
+      <ul>
+        <li><a href="https://www.google.com/" class="menu-border">google</a></li>
+        <li><a href="https://foz.ifpr.edu.br/" class="menu-border">ifpr</a></li>
+        <li><a href="https://www.uol.com.br/">uol</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Introdução</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius voluptatum ducimus blanditiis cupiditate velit
+        veniam. Praesentium tempora et debitis consequatur, sunt placeat tempore blanditiis, dolore error temporibus
+        facilis non reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corrupti aperiam
+        fugiat dolorem libero odio tenetur ratione, delectus doloremque, beatae ex qui quia. Esse excepturi, iste eos
+        labore modi dignissimos!</p>
+      <h2>Desenvolvimento</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi, repellendus nostrum consectetur
+        dolorum nisi iste, in sint nulla, neque modi enim repellat ad assumenda minima similique eius iure error. Lorem
+        ipsum dolor, sit amet consectetur adipisicing elit. Autem perferendis voluptatum itaque nostrum, fuga laboriosam
+        sapiente accusamus quos, officiis unde dolores, distinctio animi atque rem cumque a delectus doloremque sint.
+      </p>
+    </div>
+    <div id="footer">
+      Site desenvolvido por tectronica S.A.
+    </div>
+  </div>
+</body>
+
+</html>
