@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: auto;
+            margin-top: 10px;
+            width: 212px;
+        }
+        .main {
+            display: grid;
+            grid-template-columns: 60px 65px 86px;
+            /* grid-template-areas: 
+            "header header header"
+            "nome marca consumo"; */
+            border: red solid 1px;
+        }
+
+        .main div {
+            text-align: center;
+            padding: 2px;
+            border: 1px solid red;
+        }
+
+        .header {
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">Nome</div>
+        <div class="header">Marca</div>
+        <div class="header">Consumo</div>
+        <div>Fox</div>
+        <div>VW</div>
+        <div>14 km/l</div>
+        <div>Gol</div>
+        <div>VW</div>
+        <div>15 km/l</div>
+        <div>Golf</div>
+        <div>VW</div>
+        <div>11 km/l</div>
+    </div>
+    
+</body>
+</html>

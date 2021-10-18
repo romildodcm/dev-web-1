@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6 - Grid Layout</title>
+    <style>
+        .container {
+            /* usar esquema de layout grid */
+            display: grid;
+            /* define quantidades de colunas do grid */
+            grid-template-columns: 60px 120px 180px;
+            /* espaçamento entre os itens desse container */
+            gap: 6px 50px;
+            /* espaçamento das linhas */
+            /* somente na primeira linha */
+            grid-template-rows: 50px;
+            background-color: red;
+        }
+
+        .item {
+            color: #fafafa;
+            background-color: navy;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+        <div class="item">05</div>
+        <div class="item">06</div>
+        <div class="item">07</div>
+        <div class="item">08</div>
+    </div>
+</body>
+</html>
