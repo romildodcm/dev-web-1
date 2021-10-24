@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 1 - Grid Layout</title>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    div.container {
+      display: grid;
+      grid-template-columns: minmax(3px, auto) minmax(3px, 840px) minmax(3px, auto);
+      grid-template-areas:
+      ". header. "
+      ". content. "
+      ". footer .";
+    }
+
+    div.header {
+      grid-area: header;
+      text-align: center;
+    }
+
+    .header h1 {
+      color: navy;
+      background-color: burlywood;
+
+      padding: 25px;
+      margin: 0px;
+    }
+
+    .nav ul {
+      margin: 0px;
+      padding: 8px;
+
+      list-style: none;
+      background-color: #2e7d9c;
+    }
+
+    .nav li {
+      display: inline;
+    }
+
+    .nav a {
+      color: white;
+      padding: 2px;
+    }
+
+    .nav a:hover {
+      color: yellow;
+    }
+
+    .nav span {
+      margin-left: 4px;
+      border-left: 1px solid white;
+    }
+
+    .content {
+      grid-area: content;
+      background-color: white;
+      padding: 10px;
+      padding-top: 0px;
+    }
+
+    .content h2 {
+      color: navy;
+      border-bottom: 1px solid navy;
+    }
+
+    .footer {
+      grid-area: footer;
+
+      background-color: #ccc;
+      text-align: center;
+      font-size: small;
+      padding: 1.5em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Desenvolvimento de sistemas</h1>
+      <div class="nav">
+        <ul>
+          <li><a href="https://www.google.com/">google</a><span></span></li>
+          <li><a href="https://foz.ifpr.edu.br/">ifpr</a><span></span></li>
+          <li><a href="https://www.uol.com.br/">uol</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Introdução</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius voluptatum ducimus blanditiis cupiditate velit
+        veniam. Praesentium tempora et debitis consequatur, sunt placeat tempore blanditiis, dolore error temporibus
+        facilis non reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corrupti aperiam
+        fugiat dolorem libero odio tenetur ratione, delectus doloremque, beatae ex qui quia. Esse excepturi, iste eos
+        labore modi dignissimos!</p>
+      <h2>Desenvolvimento</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi, repellendus nostrum
+        consectetur dolorum nisi iste, in sint nulla, neque modi enim repellat ad assumenda minima similique eius iure
+        error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem perferendis voluptatum itaque nostrum,
+        fuga laboriosam sapiente accusamus quos, officiis unde dolores, distinctio animi atque rem cumque a delectus
+        doloremque sint.
+      </p>
+    </div>
+    <div class="footer">
+      Site desenvolvido por tectronica S.A.
+    </div>
+  </div>
+</body>
+
+</html>

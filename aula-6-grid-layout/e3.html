@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 6 - Grid Layout</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: minmax(100px, 160px) auto;
+      grid-template-areas:
+        "header header"
+        "nav-left content"
+        "footer footer";
+    }
+
+    .header {
+      grid-area: header;
+
+      background-image: url(https://raw.githubusercontent.com/fscheidt/web1/master/imgs/bg-header.jpg);
+
+      text-align: center;
+      margin: 0px;
+      padding: 0.5em;
+    }
+
+    .nav-left {
+      grid-area: nav-left;
+    }
+
+    .nav-left ul {
+      list-style: none;
+      margin-top: 6px;
+      padding: 10px;
+    }
+
+    .content {
+      grid-area: content;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "main-item main-item main-item"
+        "item1 item2 item3";
+
+      border: 1px solid rgb(56, 192, 56);
+
+    }
+
+    .content div {
+      padding: 10px;
+
+    }
+
+    .content p {
+      padding-left: 10px;
+    }
+
+    .main-item {
+      grid-area: main-item;
+
+    }
+
+    .main-item p {
+      padding: 0px;
+    }
+
+    .item1 {
+      grid-area: item1;
+      border: 1px solid #ccc;
+      padding: 10px;
+
+    }
+
+    .item1 img {
+      width: 200px;
+    }
+
+    .item2 {
+      grid-area: item2;
+      border: 1px solid #ccc;
+    }
+
+    .item3 {
+      grid-area: item3;
+      border: 1px solid #ccc;
+    }
+
+    .footer {
+      grid-area: footer;
+
+      text-align: center;
+      margin: 0px;
+      padding: 5px;
+
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>HEADER_2</h1>
+    </div>
+    <div class="nav-left">
+      <ul>
+        <li>opção A</li>
+        <li>opção B</li>
+        <li>opção C</li>
+        <li>opção D</li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="main-item">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quaerat aliquid qui rerum beatae! Accusantium hic
+          perspiciatis ducimus, nemo a corporis unde commodi culpa sunt deserunt, nostrum, atque libero nam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quaerat aliquid qui rerum beatae! Accusantium hic
+          perspiciatis ducimus, nemo a corporis unde commodi culpa sunt deserunt, nostrum, atque libero nam?</p>
+      </div>
+      <div class="item1">
+        <h3>jungle</h3>
+        <img src="https://raw.githubusercontent.com/fscheidt/web1/master/imgs/jungle01.jpg">
+      </div>
+      <div class="item2">
+        <h3>first title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quaerat aliquid qui rerum beatae! Accusantium hic
+          perspiciatis ducimus, nemo a corporis unde commodi culpa sunt deserunt, nostrum, atque libero nam?</p>
+      </div>
+      <div class="item3">
+        <h3>second title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quaerat aliquid qui rerum beatae! Accusantium hic
+          perspiciatis ducimus, nemo a corporis unde commodi culpa sunt deserunt, nostrum, atque libero nam?</p>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>FOOTER</h2>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Grid Layout - AULA 6 - Test</title>
+  <style>
+    div.container {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      align-items: center;
+      grid-template-areas: 
+      "header header"
+      "nav-left item";
+    }
+
+    div.header{
+      grid-area: header;
+      color: #fafafa;
+      background-color: #222222;
+      
+      padding: 1em;
+    }
+
+    div.nav-left {
+      grid-area: nav-left;
+
+    }
+    
+    .nav-left ul {
+      list-style-type: none;
+      padding: 0px;
+    }
+
+    .nav-left li {
+      text-align: center;
+
+      color: #fafafa;
+      background-color: #222222;
+
+      border-radius: 4px;
+      padding: 4px;
+      margin: 4px;
+    }
+    
+    div.item{
+      grid-area: item;
+      color: #fafafa;
+      background-color: #222222;
+      padding: 5px;
+      margin: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">AULA 6 - Test</div>
+    <div class="nav-left">
+      <ul>
+        <li>Home</li>
+        <li>Contato</li>
+        <li>Endereço</li>
+      </ul>
+    </div>
+    <div class="item">
+
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </div>
+</body>
+
+</html>
