@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 4 - Grid Layout</title>
+  <style>
+    body {
+      background-color: black;
+      margin: 10px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: minmax(3px, auto) 150px minmax(3px, 740px) minmax(3px, auto);
+      grid-template-areas:
+        ". header header ."
+        ". nav-left content ."
+        ". footer footer .";
+    }
+
+    .container h1,
+    h2 {
+      color: navy;
+    }
+
+    .header {
+      grid-area: header;
+
+      text-align: center;
+      background-color: burlywood;
+    }
+
+    .header h1 {
+      margin-bottom: 0px;
+    }
+
+    .header ul {
+      margin-top: 0px;
+      list-style: none;
+      padding-left: 0px;
+    }
+
+    .header li {
+      display: inline;
+    }
+
+    .header a {
+      color: white;
+      padding: 2px;
+      color: yellow;
+    }
+
+    .header a:hover {
+      background-color: black;
+      border-radius: 4px;
+    }
+
+    .header span {
+      margin-left: 4px;
+      border-left: 1px solid navy;
+    }
+
+    .nav-left {
+      grid-area: nav-left;
+      background-color: white;
+    }
+
+    .nav-left ul {
+      background-color: burlywood;
+      list-style-type: none;
+      padding: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 0px;
+    }
+
+    .nav-left li {
+      color: blue;
+      background-color: white;
+      border-radius: 4px;
+    }
+
+    .nav-left a {
+      display: block;
+      text-decoration: none;
+
+      padding: 5px;
+      padding-left: 0px;
+      margin: 10px;
+    }
+
+    .nav-left li:hover {
+      background-color: lightgreen;
+    }
+
+    .content {
+      grid-area: content;
+
+      background-color: white;
+      padding: 16px;
+      padding-top: 0px;
+      padding-right: 50px;
+    }
+
+    .content h2 {
+      color: navy;
+      border-bottom: 1px solid navy;
+    }
+
+    .footer {
+      grid-area: footer;
+
+      background-color: #ccc;
+      text-align: center;
+      font-size: small;
+      padding: 1.5em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Desenvolvimento de Sistemas</h1>
+      <ul>
+        <li><a href="https://www.google.com/">google</a><span></span></li>
+        <li><a href="https://foz.ifpr.edu.br/">ifpr</a><span></span></li>
+        <li><a href="https://www.uol.com.br/">uol</a></li>
+      </ul>
+    </div>
+    <div class="nav-left">
+      <ul>
+        <li><a href="#">produtos</a></li>
+        <li><a href="#">clientes</a></li>
+        <li><a href="#">help-desk</a></li>
+        <li><a href="#">informações</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h2>Introdução</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius voluptatum ducimus blanditiis cupiditate velit
+        veniam. Praesentium tempora et debitis consequatur, sunt placeat tempore blanditiis, dolore error temporibus
+        facilis non reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corrupti aperiam
+        fugiat dolorem libero odio tenetur ratione, delectus doloremque, beatae ex qui quia. Esse excepturi, iste eos
+        labore modi dignissimos!</p>
+      <h2>Desenvolvimento</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi, repellendus nostrum
+        consectetur
+        dolorum nisi iste, in sint nulla, neque modi enim repellat ad assumenda minima similique eius iure error.
+        Lorem
+        ipsum dolor, sit amet consectetur adipisicing elit. Autem perferendis voluptatum itaque nostrum, fuga
+        laboriosam
+        sapiente accusamus quos, officiis unde dolores, distinctio animi atque rem cumque a delectus doloremque sint.
+      </p>
+    </div>
+
+    <div class="footer">
+      Site desenvolvido por tectronica S.A.
+    </div>
+  </div>
+</body>
+
+</html>
