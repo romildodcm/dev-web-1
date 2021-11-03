@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 1 - Forms</title>
+  <style>
+    .form-ifpr {
+      display: inline-grid;
+      padding: 20px 90px 20px 20px;
+      gap: 1em;
+      grid-template-columns: max-content max-content;
+
+      background-color: #c1ffb1;
+      border: 1px solid #307735;
+    }
+
+    .form-ifpr label {
+      justify-self: end;
+      color: navy;
+    }
+
+
+    .form-ifpr input,
+    select {
+      width: max-content;
+    }
+
+    .options label {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form class="form-ifpr">
+
+      <label for="data-nascimento">Data de Nascimento:</label>
+      <input type="date" name="data-nascimento" id="data-nascimento">
+
+      <label for="escolaridade">Escolaridade:</label>
+      <select name="escolaridade" id="escolaridade">
+        <option value="ef">Ensino Fundamental</option>
+        <option value="em">Ensino Médio</option>
+        <option value="es">Ensino Superior</option>
+        <option value="pg">Pós Graduação</option>
+      </select>
+
+      <label for="status-escolaridade">Situação da Escolaridade</label>
+      <div class="options">
+        <label for="status-escolaridade">
+          <input type="radio" value="completo" name="status-escolaridade">
+          Completo
+        </label>
+        <label for="status-escolaridade">
+          <input type="radio" value="incompleto" name="status-escolaridade">
+          Incompleto
+        </label>
+      </div>
+
+      <label for="nacionalidade">Nacionalidade:</label>
+      <select name="nacionalidade" id="nacionalidade">
+        <option value="Brasil">Brasil</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Chile">Chile</option>
+        <option value="Paraguai">Paraguai</option>
+        <option value="Uruguai">Uruguai</option>
+      </select>
+
+      <label for="uf">UF onde nasceu</label>
+      <select name="uf" id="uf">
+        <option value="PR">Paraná</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+      </select>
+
+      <input type="submit" class="button" value="enviar">
+    </form>
+  </div>
+</body>
+
+</html>
