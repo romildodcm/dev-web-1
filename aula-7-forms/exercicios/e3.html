@@ -7,27 +7,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercício 3 - Forms</title>
   <style>
+    :root {
+      --main-color: #68d9bd;
+    }
+
     body {
       font-family: Arial;
       background: var(--tipo-fonte);
       background: url('https://raw.githubusercontent.com/fscheidt/web1/master/imgs/space.png');
       background-size: cover;
+
+      /* centralizando o form */
+      margin: auto;
+      padding: 10px;
+      width: max-content;
+    }
+
+    .container {
+      border-radius: 3px;
+      border: 1px solid var(--main-color);
+      background-color: rgb(104, 217, 189, 0.15);
+    }
+
+    .container p {
+      color: white;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+
+    .cadastro {
+      display: grid;
+      grid-template-columns: max-content max-content;
+      gap: 14px;
+
+      padding: 22px;
+    }
+
+    .cadastro label {
+      margin: auto 0px;
+      justify-self: end;
+      color: var(--main-color);
+    }
+
+    .cadastro label,
+    input,
+    select {
+      padding: 6px;
+    }
+
+    .cadastro input,
+    select {
+      border-radius: 2px;
+      border: 2px solid rgb(0, 96, 175, .8);
+    }
+
+    input.add {
+      grid-column: 2;
+      width: max-content;
+      padding: 4px 12px;
+      border: none;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
+    <p>Cadastro usuário</p>
     <form class="cadastro">
       <label for="nome">Nome</label>
       <input type="text" name="nome" id="nome" required minlength="2" maxlength="50" placeholder="Nome Completo">
-
       <label for="email">E-mail</label>
       <input type="text" name="email" id="email" required minlength="2" maxlength="50" placeholder="seu@email.com">
-
       <label for="data-nascimento">Nascimento</label>
       <input type="date" name="data-nascimento" id="data-nascimento" required>
-
       <label for="pais">País</label>
       <select name="pais" id="pais">
         <option value="" disabled selected hidden>Selecione</option>
@@ -37,19 +89,16 @@
         <option value="Paraguai">Paraguai</option>
         <option value="Uruguai">Uruguai</option>
       </select>
-
       <label for="idade">Idade</label>
-      <input type="number" name="idade" id="idade" min="1" max="130" required>
-
-      <label for="ddd">ddd</label>
-      <input type="text" name="ddd" id="ddd" minlength="2" maxlength="2" required placeholder="22">
-
-      <label for="telefone">Telefone</label>
-      <input type="text" minlength="8" maxlength="20" required>
-
-      <input type="submit" class="button" value="Adicionar">
+      <div>
+        <input type="number" name="idade" id="idade" min="1" max="130" required>
+        <label for="ddd">DDD</label>
+        <input class="ddd" type="text" name="ddd" id="ddd" minlength="2" maxlength="2" required placeholder="22">
+        <label for="telefone">Telefone</label>
+        <input type="text" minlength="8" maxlength="20" required>
+      </div>
+      <input class="add" type="submit" class="button" value="Adicionar">
     </form>
-
   </div>
 </body>
 
