@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        body {
+            background-color: red;
+        }
+    </style>
+    <script>
+        document.write("<h1>EU VÔ MATAR O JAVASCRIPTO!!!</h1>");
+
+        // alert("Hello World!");
+
+        // depuração
+        console.log("EU VÔ MATAR O JAVASCRIPTO!!!");
+
+        var nome = prompt("Qual o seu nome?");
+        var idade = parseInt(prompt("Qual o sua idade?"));
+        
+        // console.log("Tipo da var idade: ", typeof(idade));
+        console.log("Olá, ", nome);
+
+        document.write("<p>Olá, ", nome, "</p>");
+    
+        //loooooop for
+        // for (let index = 0; index < 1000; index++) {
+        //     document.write("<p>Idade incorreta!</p>");
+        // }
+        
+        //mudando background colos
+        let body = document.getElementsByTagName("body");
+
+        //loop while
+        var hue = true;
+        while (isNaN(idade)) {
+            alert("<p>Idade incorreta!</p>");
+            idade = parseInt(prompt("Qual o sua idade?"));
+
+            if (hue) {
+                body.style.backgroundColor = '#000';
+            } else {
+                body.style.backgroundColor = '#fff';
+            }
+
+            hue = !hue;
+        }
+    
+        document.write("<p>Idade: ", idade, "</p>");
+    
+
+        // var sair = confirm("Deseja sair?");
+        // if (sair) {
+        //     document.write("<h1>Adeus!</h1>");
+        // } else {
+        //     document.write("<p>Obrigado pela confiança!</p>");
+        // }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <h3>1</h3>
+    <p class="sobrenomeNome">Sobrenome, Nome</p>
+    <h3>2</h3>
+    <div id="resultado">
+        Valor com 10% de desconto: 
+    </div>
+    <p id="resultadoN">
+        Valor com 20% de desconto: 
+    </p>
+</body>
+<script>
+    // 1
+    var nome = prompt("Digite seu nome:");
+    var sobrenome = prompt("Digite seu sobrenome:");
+    
+    // não usar mais essa função, fazer com innerHTML
+    // document.write("<p>", sobrenome, " ", nome, "</p>");
+
+    // pegando elemento por
+    var sobrenomeNome = document.getElementsByClassName("sobrenomeNome");
+    sobrenomeNome.innerHTML = sobrenome + ", " + nome;
+    
+    // 2
+    var preco = parseInt(prompt("Qual o preço do produto?"));
+    var resultado = preco * 0.9;
+    
+    var div = document.getElementById("resultado");
+    div.innerHTML = "Valor com 10% de desconto: " + resultado;
+    
+    //
+    // var test = document.querySelector(".resultadoN"); // para class
+    resultado = preco * 0.8;
+    var test = document.querySelector("#resultadoN"); // para id
+    test.innerHTML = "Valor com 20% de desconto: " + resultado;
+
+
+</script>
+</html>
