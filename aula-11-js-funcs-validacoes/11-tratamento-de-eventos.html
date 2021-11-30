@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de eventos</title>
+</head>
+<style>
+body{
+    /* color: white; */
+}
+button{
+    background-color: red;
+    border-radius: 15px;
+    padding: 1em;
+    margin: 10px;
+
+}
+</style>
+<body>
+    <button id="btn"><h1>CLIQUE AQUI</h1><h1>PARA MATAR O JAVASCRIPTO</h1></button>
+    
+    <p>Preço 1:</p>
+    <input type="text" class="preco">
+    <p>Preço 2:</p>
+    <input type="text" class="preco">
+
+    <div id="resultado"></div>
+</body>
+<script>
+    const btn = document.querySelector("#btn");
+    // recebe dois parametros
+    // primeiro: evento em que estamos interessado
+    // segundo: uma função (aqui aplicação arrow function sem nome)
+    a = true;
+    btn.addEventListener("click", event => {
+        alert("VOCÊ MATOU O JAVASCRIPTO");
+        if(a){
+            document.bgColor = "black";
+            document.fgColor = "white";
+            a = false;
+        }
+        else
+        {
+            document.bgColor = "white";
+            document.fgColor = "black";
+            a = true;
+        }
+
+        // document.button.
+    });
+
+    // array of all html tags with the class
+    let inputs = document.querySelectorAll(".preco");
+
+    /*
+    inputs.forEach(
+        element => element.style.backgroundColor='red'
+    );
+    */
+
+    // evento keypress é quando alguém digita algo na input
+    inputs.forEach(
+        value = element => element.addEventListener("keyup",
+            event => {
+                let valor = element.value;
+                
+            }
+            console.log(valor)
+            );
+
+        document.querySelector("#resultado").innerHTML = soma;
+    );
+
+    for(i = 0; i < 2; i++)
+
+
+
+
+</script>
+</html>

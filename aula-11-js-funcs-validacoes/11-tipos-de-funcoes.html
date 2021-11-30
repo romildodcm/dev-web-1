@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de funções</title>
+    <style>
+        body{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>JAVASCRIPTO</h1>
+    <h1>JAVASCRIPTO</h1>
+    <h1>JAVASCRIPTO</h1>
+    <h1>JAVASCRIPTO</h1>
+    <h1>JAVASCRIPTO</h1>
+    <h1>JAVASCRIPTO</h1>
+    <h1>JAVASCRIPTO</h1>
+    <h1>JAVASCRIPTO</h1>
+    <!-- https://medium.com/jaguaribetech/eii-people-6e4e5fa08a8a -->
+</body>
+<script>
+    // tipos de funções no JS
+    function soma1(a, b){
+        return a+b;
+    }
+    console.log(soma1(2, 5));
+    
+    // arrow function
+    let soma2 = (a, b) => {
+        return a + b;
+    };
+    console.log(soma2(2, 5));
+    
+    let soma3 = (a, b) => a + b;
+    console.log(soma3(2, 5));
+
+    let pow2 = n => n * n;
+
+
+    // tratamento de eventos usando apenas JS
+
+    // JSON
+
+    let pessoa = {
+        nome: "Fulano das Couve",
+        idade: 33,
+        curso: "TADS",
+        ola: function(){
+            console.log("Olá, meu nome eh: ", this.nome);
+        }
+    }
+
+    console.log(pessoa);
+    console.log(pessoa.nome);
+    console.log(pessoa.ola);
+    pessoa.ola;
+
+</script>
+</html>
+
+
